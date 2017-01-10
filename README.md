@@ -3,17 +3,17 @@
 <!-- > Created by Fisher at 02:53 on 2017-01-11. -->
 
 
-## Blog Structure
+## Blogs List
+
+- [How To](/#) (Guidance and Tips based on topics)
+	- [How to Make Plans](/how-to/make-plans.html)
+- [Journals](/#)
+- [Opinions](/#)
+- [To Do or Not](/#) (Shitty ideas)
+- [Get Started](/#) (Introduction for newbies)
+	- [Using Webstorm](/get-started/tools/webstorm.html)
 
 
-- Blog List
-	- /blogs
-	- /get-stareted (Introduction for newbies)
-	- /how-to (Guidance and Tips based on topics)
-	- /ideas
-	- /journals
-	- /opinions
-	- /todoornot (Shitty ideas)
 
 
 
