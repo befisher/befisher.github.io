@@ -8,10 +8,12 @@
 - [How To](/#) (Guidance and Tips based on topics)
 	- [How to Make Plans](/how-to/make-plans.html)
 - [Journals](/#)
+	- [My Learning Tree](/journals/learning-tree.html)
 - [Opinions](/#)
 - [To Do or Not](/#) (Shitty ideas)
 - [Get Started](/#) (Introduction for newbies)
-	- [Using Webstorm](/get-started/tools/webstorm.html)
+	- [Tools](/#) (Introduction of Tools)
+		- [Using Webstorm](/get-started/tools/webstorm.html)
 
 
 
