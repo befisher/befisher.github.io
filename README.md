@@ -5,20 +5,15 @@
 
 ## Blogs List
 
-- [How To](/#) (Guidance and Tips based on topics)
-	- [How to Make Plans](/how-to/make-plans.html)
-- [Journals](/#)
-	- [My Learning Tree](/journals/learning-tree.html)
-- [Opinions](/#)
-- [To Do or Not](/#) (Shitty ideas)
 - [Get Started](/#) (Introduction for newbies)
 	- [Tools](/#) (Introduction of Tools)
 		- [Using Webstorm](/get-started/tools/webstorm.html)
-
-
-
-
-
-
-
-
+- [How To](/#) (Guidance and Tips based on topics)
+	- [How to Make Plans](how-to/make-plans.html)
+- [Journals](/#)
+- [My][/#]
+	- [My Learning Tree](journals/learning-tree.html)
+	- [My Books List][my/books-list.html]
+	- [My Movies List][my/movies-list.html]
+- [Opinions](/#)
+- [To Do or Not](/#) (Shitty ideas)

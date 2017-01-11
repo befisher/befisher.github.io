@@ -98,14 +98,20 @@ Since it is just a simple list of what I've heard of, used, or learned personall
 	- SQL
 	- Swift
 	- Unified Modeling Language(UML)
+- Programming News
+	- [TechCrunch][website-tech-crunch-com]
 - Platforms
 	- Android
-		- Retrofit
+		- Architecture
+			- MVC/MVVM/MVP
+		- Libraries
+			- Retrofit
 	- Browser
 	- Cross Platform
 		- [Cordova][website-cordova-apache-org]
 		- [React Native][github-react-native]
 		- [~~Xamarin~~][website-xamarin-com]
+	- Linux
 	- Windows
 		- [WPF][wiki-windows-presentation-foundation]
 		- Windows Forms
@@ -131,7 +137,7 @@ Since it is just a simple list of what I've heard of, used, or learned personall
 - Security
 	- HTTPS Certification
 	 	- [Let's Encrypt][website-lets-encrypt-org]
-- Softwares
+- Systems and Softwares
 	- Database
 		- Redis
 		- MongoDB
@@ -139,26 +145,28 @@ Since it is just a simple list of what I've heard of, used, or learned personall
 		- ~~MySQL~~
 		- Oracle
 		- ~~SQL Server~~
-	- [Docker][website-docker-com]
+	- File System
+		- [OwnCloud][website-owncloud-org]
 	- Linux Terminal Simulator for Windows
 		- Git Bash
 		- [Cygwin][website-cygwin-com]
 	- Proxy
 		- Shadowsocks
 		- SwitchyOmega
-	- Systems
-		- Android
-		- iOS
-		- Linux
-		- ~~Windows~~
 	- Text Editor
 		- [Atom][website-atom-io]
 		- Notepad++
 		- Sublime Text
 		- Vim
+	- Virtualization
+		- [Docker][website-docker-com]
+		- [Xen Server/Project][wiki-xen]
 	- Web Server
 		- ~~Apache~~
 		- Nginx
+	- Services Provider
+		- [AWS][website-aws-amazon-com]
+		- Aliyun
 - Startup
 	- Team
 	- Products
@@ -232,6 +240,7 @@ Since it is just a simple list of what I've heard of, used, or learned personall
 0. [Wiki: Regulated Power Supply][wiki-regulated-power-supply]
 0. [Wiki: File transfer Protocol][wiki-file-transfer-protocol]
 0. [Wiki: Windows Presentation Foundation][wiki-windows-presentation-foundation]
+0. [Wiki: Xen Project][wiki-xen]
 0. [Website: Stack Overflow][website-stackoverflow-com]
 0. [Website: Google][website-google-com]
 0. [Github: Free Programming Books][github-free-programming-books]
@@ -244,6 +253,9 @@ Since it is just a simple list of what I've heard of, used, or learned personall
 0. [Website: Docker][website-docker-com]
 0. [Apache: Apache][website-hadoop-apache-org]
 0. [Apache: Cordova][website-cordova-apache-org]: https://cordova.apache.org/
+0. [Website: Amazon Web Services][website-aws-amazon-com]
+0. [Website: OwnCloud][website-owncloud-org]
+0. [Website: TechCrunch][website-tech-crunch-com]
 
 [wiki-user-interface-design]: https://en.wikipedia.org/wiki/User_interface_design "Wiki: User Interface Design"
 [wiki-JavaScript-libraries-list]: https://en.wikipedia.org/wiki/List_of_JavaScript_libraries "Wiki: List of JavaScript Libraries"
@@ -251,6 +263,7 @@ Since it is just a simple list of what I've heard of, used, or learned personall
 [wiki-file-transfer-protocol]: https://en.wikipedia.org/wiki/File_Transfer_Protocol "Wiki: File transfer Protocol"
 [wiki-apache-subversion]: https://en.wikipedia.org/wiki/Apache_Subversion "Wiki: Apache Subversion"
 [wiki-windows-presentation-foundation]: https://en.wikipedia.org/wiki/Windows_Presentation_Foundation "Wiki: Windows Presentation Foundation"
+[wiki-xen]: https://en.wikipedia.org/wiki/Xen "Wiki: Xen Project"
 [website-stackoverflow-com]: http://stackoverflow.com/ "Website: Stack Overflow"
 [website-google-com]: https://www.google.com/ "Website: Google"
 [github-free-programming-books]: https://github.com/vhf/free-programming-books "Github: Free Programming Books"
@@ -265,6 +278,9 @@ Since it is just a simple list of what I've heard of, used, or learned personall
 [website-hadoop-apache-org]: http://hadoop.apache.org/ "Website: Apache"
 [website-cordova-apache-org]: https://cordova.apache.org/ "Website: Cordova"
 [website-lets-encrypt-org]: https://letsencrypt.org/ "Website: Let's Encrypt"
+[website-aws-amazon-com]: https://aws.amazon.com/ "Website: Amazon Web Services"
+[website-owncloud-org]: https://owncloud.org/ "Website: OwnCloud"
+[website-tech-crunch-com]: https://techcrunch.com/ "Website: TechCrunch"
 
 
 ---
