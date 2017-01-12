@@ -12,7 +12,7 @@
 	- [How to Make Plans](how-to/make-plans.html)
 - [Journals](/#)
 - [My](/#)
-	- [My Learning Tree](journals/learning-tree.html)
+	- [My Learning Tree](my/learning-tree.html)
 	- [My Books List](my/books-list.html)
 	- [My Movies List](my/movies-list.html)
 - [Opinions](/#)

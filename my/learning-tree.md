@@ -177,13 +177,17 @@ Since it is just a simple list of what I've heard of, used, or learned personall
 
 ## Hardware
 
-- Arduino
 - 3D Printing
-- Robot
+- Arduino
+- Intelligent Car
+- [Model Aircraft][wiki-model-aircraft]
+	- Battery
+	- Motor
+	- Remote Control
+	- [Aerial Photography][wiki-aerial-photography]
+- [Regulated Power Supply][wiki-regulated-power-supply]
+- Robots
 - Single Ship Computer
-- Projects
-	- [Regulated Power Supply][wiki-regulated-power-supply]
-	- Intelligent Car
 
 ## Art and Literature
 
@@ -200,7 +204,7 @@ Since it is just a simple list of what I've heard of, used, or learned personall
 - Reading
 	- Biography
 
-##  Learning
+## Learning
 
 - English
 	- Listening
@@ -212,10 +216,15 @@ Since it is just a simple list of what I've heard of, used, or learned personall
 - Japanese
 
 
-## Skills
+## Skills or Hobbies
+
+There are Skills or Hobbies that you can practice for pleasure.
 
 - Basketball
+- Doing Exercise
+- Driving
 - Football
+- Handwriting
 - Singing
 - Swimming
 - Table Tennis
@@ -241,6 +250,8 @@ Since it is just a simple list of what I've heard of, used, or learned personall
 0. [Wiki: File transfer Protocol][wiki-file-transfer-protocol]
 0. [Wiki: Windows Presentation Foundation][wiki-windows-presentation-foundation]
 0. [Wiki: Xen Project][wiki-xen]
+0. [Wiki: Model Aircraft][wiki-model-aircraft]
+0. [Wiki: Aerial Photography][wiki-aerial-photography]
 0. [Website: Stack Overflow][website-stackoverflow-com]
 0. [Website: Google][website-google-com]
 0. [Github: Free Programming Books][github-free-programming-books]
@@ -264,6 +275,8 @@ Since it is just a simple list of what I've heard of, used, or learned personall
 [wiki-apache-subversion]: https://en.wikipedia.org/wiki/Apache_Subversion "Wiki: Apache Subversion"
 [wiki-windows-presentation-foundation]: https://en.wikipedia.org/wiki/Windows_Presentation_Foundation "Wiki: Windows Presentation Foundation"
 [wiki-xen]: https://en.wikipedia.org/wiki/Xen "Wiki: Xen Project"
+[wiki-model-aircraft]: https://en.wikipedia.org/wiki/Model_aircraft "Wiki: Model Aircraft"
+[wiki-aerial-photography]: https://en.wikipedia.org/wiki/Aerial_photography "Wiki: Aerial Photography"
 [website-stackoverflow-com]: http://stackoverflow.com/ "Website: Stack Overflow"
 [website-google-com]: https://www.google.com/ "Website: Google"
 [github-free-programming-books]: https://github.com/vhf/free-programming-books "Github: Free Programming Books"
