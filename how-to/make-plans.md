@@ -6,12 +6,15 @@ Often we need make plans to learn subjects in school, to learn some skills, to t
 
 ## Categories
 
-- Daily Plans(To-Do List)
-- Weekly Plans
-- Monthly Plans
-- Yearly Plans
-- Periodical Plans
-- Life-long Plans
+- By Time
+	- Daily Plans(To-Do List)
+	- Weekly Plans
+	- Monthly Plans
+	- Yearly Plans
+	- Periodical Plans
+	- Life-long Plans
+- By [Getting Things Done][wiki-getting-things-done]
+	- Urgent and Important
 
 ## Tips
 
@@ -68,6 +71,7 @@ Add deadline or frequency limitation and make them as your plans :)
 - "[Form a Plan: Create a Life Plan][wikihow-form-a-plan]". WikiHow.
 - "[Create an Effective Action Plan][wikihow-create-an-effective-action-plan]". WikiHow
 - "[18 Things College Students Should Do Before Graduation][lifehack-18-things-college-students-should-before-graduation]". Lifehack.
+- [Wiki: Getting Things Done][wiki-getting-things-done]. Wiki.
 
 
 
@@ -75,3 +79,4 @@ Add deadline or frequency limitation and make them as your plans :)
 [wikihow-form-a-plan]: http://www.wikihow.com/Form-a-Plan#Creating_a_Life_Plan_sub "Form a Plan: Create a Life Plan"
 [wikihow-create-an-effective-action-plan]: http://www.wikihow.com/Create-an-Effective-Action-Plan "Create an Effective Action Plan"
 [lifehack-18-things-college-students-should-before-graduation]: http://www.lifehack.org/296142/18-things-college-students-should-before-graduation "18 Things College Students Should Do Before Graduation"
+[wiki-getting-things-done]: https://en.wikipedia.org/wiki/Getting_Things_Done "Wiki: Getting Things Done"
