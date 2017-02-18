@@ -16,7 +16,7 @@ Run the following scripts to update server.
 
 Some basic programs are useful, but it is up to you whether to install it or not.
 
-0. Install `git`
+0. `git`: a version control system (VCS).
 	- $ `sudo apt install git`
 0. [Install `pip`][article-install-pip]
 	- $ `sudo apt install python-pip python-dev build-essential`
@@ -29,7 +29,7 @@ Some basic programs are useful, but it is up to you whether to install it or not
 0. `screen`: to run multi processes in the same time.
 	- $ `sudo apt-get install screen`
 	- $ `screen -S session-name`
-0. nodejs: to run NodeJs scripts.
+0. [nodejs][website-nodejs-org]: to run NodeJs scripts.
 	0. Install from apt
 		0. nodejs
 			- $ `sudo apt-get install nodejs`
@@ -69,9 +69,17 @@ Run one of the following command to start a server that serve static files.
 - $ `python -m SimpleHTTPServer 3000`
 - $ `ruby -run -ehttpd ./ -p3000`
 
+## [Setup LAMP][article-setup-lamp]
 
+## Setup FTP Server
+
+- [`vsftpd`][article-setup-vsftpd]
+	- $ `sudo apt install vsftpd`
 
 
 
 [article-install-pip]: http://www.saltycrane.com/blog/2010/02/how-install-pip-ubuntu/
+[article-setup-lamp]: https://help.ubuntu.com/lts/serverguide/lamp-overview.html "Set up LAMP"
+[article-setup-vsftpd]: https://help.ubuntu.com/lts/serverguide/ftp-server.html "Set up vsftpd"
 [gist-http-static-server]: https://gist.github.com/willurd/5720255 "One line to set up HTTP static server"
+[website-nodejs-org]: https://nodejs.org/en/ "Website: Node.Js"

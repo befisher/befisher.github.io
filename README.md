@@ -6,7 +6,9 @@
 ## Blogs List
 
 - [Get Started](/#) (Introduction for newbies)
-	- [Tools](/#) (Introduction of Tools)
+	- [Linux][/#]
+		- [Setup Server](/linux/setup-server.html)
+	- [Tools](/#)
 		- [Using Webstorm](/get-started/tools/webstorm.html)
 - [How To](/#) (Guidance and Tips based on topics)
 	- [How to Make Plans](how-to/make-plans.html)
