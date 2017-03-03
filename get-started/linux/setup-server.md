@@ -18,7 +18,7 @@ Some basic programs are useful, but it is up to you whether to install it or not
 
 0. `git`: a version control system (VCS).
 	- $ `sudo apt install git`
-0. [Install `pip`][article-install-pip]
+0. [`pip`][article-install-pip]
 	- $ `sudo apt install python-pip python-dev build-essential`
 	- $ `sudo pip install --upgrade pip`
 	- $ `sudo export LC_ALL=C`
@@ -30,21 +30,21 @@ Some basic programs are useful, but it is up to you whether to install it or not
 	- $ `sudo apt-get install screen`
 	- $ `screen -S session-name`
 0. [nodejs][website-nodejs-org]: to run NodeJs scripts.
-	0. Install from apt
+	0. [Download][website-nodejs-org] and extract
+		- $ `wget https://nodejs.org/dist/v6.9.1/node-v6.9.1-linux-x64.tar.xz`
+		- $ `ln -s /opt/nodejs/bin/node /usr/bin/node`
+		- $ `ln -s /opt/nodejs/bin/npm /usr/bin/npm`
+	0. ~~Install from apt~~
 		0. nodejs
 			- $ `sudo apt-get install nodejs`
 			- $ ```sudo ln -s `which nodejs` /usr/bin/node```
 		1. npm
 			- $ `sudo apt-get install npm`
-	1. Download and extract
-		- $ `wget https://nodejs.org/dist/v6.9.1/node-v6.9.1-linux-x64.tar.xz`
-		- $ `ln -s /opt/nodejs/bin/node /usr/bin/node`
-		- $ `ln -s /opt/nodejs/bin/npm /usr/bin/npm`
-0. mongodb
-	0. For project development.
+0. mongodb: NoSQL Database.
+	0. [Download][page-mongodb-download-center] and Install
 		- $ `wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-3.2.9.tgz`
 		- $ `mongod --config <config-file.cfg>`
-	1. Install from apt(very old)
+	1. ~~Install from apt~~ (very old)
 		- $ `sudo apt install mongodb`
 0. redis: for project development.
 	- $ `wget http://download.redis.io/releases/redis-3.2.5.tar.gz`
@@ -76,10 +76,14 @@ Run one of the following command to start a server that serve static files.
 - [`vsftpd`][article-setup-vsftpd]
 	- $ `sudo apt install vsftpd`
 
+<!-- ## References -->
+
+<!-- 0. [My Learning Tree](/my/learning-tree.html) -->
 
 
 [article-install-pip]: http://www.saltycrane.com/blog/2010/02/how-install-pip-ubuntu/
 [article-setup-lamp]: https://help.ubuntu.com/lts/serverguide/lamp-overview.html "Set up LAMP"
 [article-setup-vsftpd]: https://help.ubuntu.com/lts/serverguide/ftp-server.html "Set up vsftpd"
+[page-mongodb-download-center]: https://www.mongodb.com/download-center "Download MongoDB"
 [gist-http-static-server]: https://gist.github.com/willurd/5720255 "One line to set up HTTP static server"
 [website-nodejs-org]: https://nodejs.org/en/ "Website: Node.Js"

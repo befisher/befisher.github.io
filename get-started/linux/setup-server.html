@@ -26,7 +26,7 @@ Run the following scripts to update server.</p>
 <li>$ <code>sudo apt install git</code></li>
 </ul>
 </li>
-<li><a href="http://www.saltycrane.com/blog/2010/02/how-install-pip-ubuntu/">Install <code>pip</code></a><ul class="list">
+<li><a href="http://www.saltycrane.com/blog/2010/02/how-install-pip-ubuntu/"><code>pip</code></a><ul class="list">
 <li>$ <code>sudo apt install python-pip python-dev build-essential</code></li>
 <li>$ <code>sudo pip install --upgrade pip</code></li>
 <li>$ <code>sudo export LC_ALL=C</code></li>
@@ -44,7 +44,13 @@ Run the following scripts to update server.</p>
 </ul>
 </li>
 <li><a href="https://nodejs.org/en/" title="Website: Node.Js">nodejs</a>: to run NodeJs scripts.<ol class="list">
-<li>Install from apt<ol class="list">
+<li><a href="https://nodejs.org/en/" title="Website: Node.Js">Download</a> and extract<ul class="list">
+<li>$ <code>wget https://nodejs.org/dist/v6.9.1/node-v6.9.1-linux-x64.tar.xz</code></li>
+<li>$ <code>ln -s /opt/nodejs/bin/node /usr/bin/node</code></li>
+<li>$ <code>ln -s /opt/nodejs/bin/npm /usr/bin/npm</code></li>
+</ul>
+</li>
+<li><del>Install from apt</del><ol class="list">
 <li>nodejs<ul class="list">
 <li>$ <code>sudo apt-get install nodejs</code></li>
 <li>$ <code>sudo ln -s `which nodejs` /usr/bin/node</code></li>
@@ -56,21 +62,15 @@ Run the following scripts to update server.</p>
 </li>
 </ol>
 </li>
-<li>Download and extract<ul class="list">
-<li>$ <code>wget https://nodejs.org/dist/v6.9.1/node-v6.9.1-linux-x64.tar.xz</code></li>
-<li>$ <code>ln -s /opt/nodejs/bin/node /usr/bin/node</code></li>
-<li>$ <code>ln -s /opt/nodejs/bin/npm /usr/bin/npm</code></li>
-</ul>
-</li>
 </ol>
 </li>
-<li>mongodb<ol class="list">
-<li>For project development.<ul class="list">
+<li>mongodb: NoSQL Database.<ol class="list">
+<li><a href="https://www.mongodb.com/download-center" title="Download MongoDB">Download</a> and Install<ul class="list">
 <li>$ <code>wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-3.2.9.tgz</code></li>
 <li>$ <code>mongod --config &lt;config-file.cfg&gt;</code></li>
 </ul>
 </li>
-<li>Install from apt(very old)<ul class="list">
+<li><del>Install from apt</del> (very old)<ul class="list">
 <li>$ <code>sudo apt install mongodb</code></li>
 </ul>
 </li>
@@ -114,6 +114,8 @@ Run the following scripts to update server.</p>
 </ul>
 </li>
 </ul>
+<!-- ## References -->
+<!-- 0. [My Learning Tree](/my/learning-tree.html) -->
     </article>
   </body>
 </html>
