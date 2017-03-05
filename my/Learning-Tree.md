@@ -199,10 +199,12 @@ Since it is just a simple list of what I've heard of, used, or learned personall
 	- Watercolor
 - Music
 	- Guitar
-- Philosophy
-- Psychology
-- Reading
+- Reading & Writing
 	- Biography
+	- Novels
+	- Philosophy
+	- Poems
+	- Psychology
 
 ## Learning
 
