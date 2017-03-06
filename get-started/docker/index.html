@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Get Started with Docker</title>
+    <link type="text/css" rel="stylesheet" href="../../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/hljs-github.min.css"/>
+  </head>
+  <body>
+    <article class="markdown-body"><h1 id="get-started-with-docker"><a class="header-link" href="#get-started-with-docker"></a>Get Started with Docker</h1>
+<blockquote>
+<p>6th March, 2017, 21:45.</p>
+</blockquote>
+<p>Simple notes for references.</p>
+<h2 id="basic"><a class="header-link" href="#basic"></a>Basic</h2>
+<p>Docker Images</p>
+<ul class="list">
+<li><code>docker search &lt;name&gt;</code>: Search for images.</li>
+<li><code>docker pull &lt;name&gt;:&lt;tag&gt;</code>: Pull images.<ul class="list">
+<li><code>docker pull ubuntu:latest</code></li>
+</ul>
+</li>
+<li><code>docker images</code>: List local images.</li>
+<li><code>docker rmi &lt;image-name&gt;</code>: Remove specified image.<ul class="list">
+<li><code>docker rmi ubuntu:latest</code></li>
+</ul>
+</li>
+<li><code>docker history &lt;image-name&gt;:&lt;tag&gt;</code>: Show history of image.<ul class="list">
+<li><code>docker history hello:0.1</code></li>
+</ul>
+</li>
+<li><code>docker build --tag &lt;image-name&gt;:&lt;tag&gt;</code>: Build a docker image based on Dockerfile.<ul class="list">
+<li><code>docker build --tag hello:0.1</code></li>
+</ul>
+</li>
+</ul>
+<p>Docker Containers 101</p>
+<ul class="list">
+<li><code>docker run &lt;options&gt; &lt;image-name&gt; &lt;commands-to-be-run&gt;</code><ul class="list">
+<li><code>docker run -i -t --name hello ubuntu /bin/bash</code><ul class="list">
+<li><code>-i</code>(Interactive) &amp; <code>-t</code>(Pseudo-tty): Interactive mode.</li>
+<li><code>--name</code>: Set the container name.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>docker ps</code>: List running containers<ul class="list">
+<li><code>docker ps -a</code>: List all containers</li>
+</ul>
+</li>
+<li><code>docker start &lt;container-name&gt;</code>: Start container.<ul class="list">
+<li><code>docker start hello</code></li>
+</ul>
+</li>
+<li><code>docker restart &lt;container-name&gt;</code>: Restart container.<ul class="list">
+<li><code>docker restart hello</code></li>
+</ul>
+</li>
+<li><code>docker stop &lt;container-name&gt;</code>: Stop container.<ul class="list">
+<li><code>docker stop hello</code></li>
+</ul>
+</li>
+<li><code>docker attach &lt;container-name&gt;</code>: Attach container.<ul class="list">
+<li><code>docker attach hello</code></li>
+<li><code>Ctrl + P, Ctrl + Q</code>: Detach container.</li>
+</ul>
+</li>
+<li><code>docker exec &lt;container-name&gt; &lt;commands-to-be-run&gt;</code>: Run commands directly.<ul class="list">
+<li><code>docker exec hello echo &quot;Hello World&quot;</code></li>
+</ul>
+</li>
+<li><code>docker rm &lt;container-name&gt;</code>: Remove container.</li>
+</ul>
+<p>Integrated Operations</p>
+<ul class="list">
+<li><code>docker cp &lt;container-name&gt;:&lt;container-path&gt; &lt;local-path&gt;</code>: Copy container file to local.</li>
+<li><code>docker commit -a &quot;&lt;Some Message&gt;&quot; -m &quot;&lt;Some Message&gt;&quot; &lt;container-name&gt; &lt;image-name&gt;:&lt;tag&gt;</code>: Commit changes in container into image.<ul class="list">
+<li><code>docker commit -a &quot;Berton Fisher &lt;berton.fisher@gmail.com&gt;&quot; -m &quot;Added hello.txt&quot; helloNginx &lt;image-name&gt;:&lt;tag&gt;</code><ul class="list">
+<li><code>-a</code>: Set author.</li>
+<li><code>-m</code>: Set comment.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>docker diff &lt;container-name&gt;</code>: Show changes of container.<ul class="list">
+<li><code>docker diff helloNginx</code></li>
+</ul>
+</li>
+<li><code>docker inspect &lt;container-name&gt;</code>: Inspect container.</li>
+</ul>
+<p>Run containers</p>
+<ul class="list">
+<li><code>docker run &lt;options&gt;</code><ul class="list">
+<li><code>docker run --name &lt;container-name&gt; -d -p 80:80 -v /root/data:/data hello:0.1</code></li>
+<li>Options<ul class="list">
+<li><code>-i</code>(Interactive) &amp; <code>-t</code>(Pseudo-tty): Interactive mode.</li>
+<li><code>--name</code>: Set the container name.</li>
+<li><code>-d</code>: Run container in background.</li>
+<li><code>-p &lt;local-port&gt;:&lt;container-port&gt;</code>: Bind port 80 of localhost with port 80 of container.</li>
+<li><code>-v &lt;local-directory&gt;:&lt;container-directory&gt;</code>: Bind local directory with container directory.</li>
+<li><code>--volumes-from &lt;container-name&gt;</code>: Share the same volume from the specified container.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>docker run &lt;options&gt; --link &lt;container-name&gt;:&lt;container-alias&gt; &lt;image&gt;</code><ul class="list">
+<li><code>docker run --name web -d -p 80:80 --link db:db nginx</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="publish-an-image"><a class="header-link" href="#publish-an-image"></a>Publish An Image</h2>
+<ol class="list">
+<li><code>docker pull registry:latest</code>: Get the image for registry.</li>
+<li><code>docker run -d -p 3333:3333 --name registry-server -v /tmp/registry:/tmp/registry registry</code>: Run the registry server.</li>
+<li><code>docker tag hello-nginx:0.1 localhost:3333/hello-nginx:0.1</code>: Tag the image.</li>
+<li><code>docker push localhost:3333/hello-nginx:0.1</code>: Push the image.</li>
+<li><code>docker pull 127.0.0.1:3333/hello-nginx:0.1</code>: Pull the image.</li>
+</ol>
+<h2 id="docker-images"><a class="header-link" href="#docker-images"></a>Docker Images</h2>
+<ul class="list">
+<li><code>docker pull mongo</code></li>
+<li><code>docker pull ubuntu</code></li>
+<li><code>docker pull redis</code></li>
+</ul>
+    </article>
+  </body>
+</html>
