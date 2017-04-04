@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Plot Related</title>
+    <link type="text/css" rel="stylesheet" href="../../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/hljs-github.min.css"/>
+  </head>
+  <body>
+    <article class="markdown-body"><h1 id="plot-related"><a class="header-link" href="#plot-related"></a>Plot Related</h1>
+<!-- > Created by Fisher at 03:54 on 2017-03-30. -->
+<pre class="hljs"><code>plot(x, y)
+
+<span class="hljs-comment">% Draw the points.</span>
+scatter(x, y)
+
+<span class="hljs-comment">% Hold the current figure.</span>
+hold on
+
+<span class="hljs-comment">% Grid the figure.</span>
+grid on
+
+<span class="hljs-comment">% Set labels.</span>
+xlabel(<span class="hljs-string">'Some Label for X'</span>)
+ylabel(<span class="hljs-string">'Some Label for Y'</span>)
+title(<span class="hljs-string">'Figure Title'</span>)
+
+<span class="hljs-comment">% Add legend and specify the position.</span>
+legend(<span class="hljs-string">'Data'</span>,<span class="hljs-string">'Slope'</span>,<span class="hljs-string">'Slope &amp; Intercept'</span>,<span class="hljs-string">'Location'</span>,<span class="hljs-string">'best'</span>);
+
+<span class="hljs-comment">% Set x tick frequency.</span>
+set(gca,<span class="hljs-string">'xtick'</span>,<span class="hljs-number">1</span>:<span class="hljs-number">5</span>:<span class="hljs-number">60</span>);
+<span class="hljs-comment">% Set x tick label</span>
+set(gca,<span class="hljs-string">'xticklabel'</span>,<span class="hljs-number">1</span>:<span class="hljs-number">5</span>:<span class="hljs-number">60</span>);</code></pre>    </article>
+  </body>
+</html>

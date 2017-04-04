@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Backup and Restore of MongoDB</title>
+    <link type="text/css" rel="stylesheet" href="../../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/hljs-github.min.css"/>
+  </head>
+  <body>
+    <article class="markdown-body"><h1 id="backup-and-restore-of-mongodb"><a class="header-link" href="#backup-and-restore-of-mongodb"></a>Backup and Restore of MongoDB</h1>
+<blockquote>
+<p>Created by Fisher at 17:42 on 2017-03-12.</p>
+</blockquote>
+<h2 id="using-mongoexport"><a class="header-link" href="#using-mongoexport"></a>Using mongoexport</h2>
+<pre class="hljs"><code>mongoexport --port &lt;port&gt; --db &lt;db-name&gt; --collection &lt;collection-name&gt; --out &lt;out-put-file&gt;
+
+
+mongoimport --port &lt;port&gt; --db &lt;db-name&gt; --collection &lt;collection-name&gt; --file &lt;to-be-imported-file&gt;</code></pre>    </article>
+  </body>
+</html>

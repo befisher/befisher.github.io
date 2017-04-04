@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Python 101</title>
+    <link type="text/css" rel="stylesheet" href="../../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/hljs-github.min.css"/>
+  </head>
+  <body>
+    <article class="markdown-body"><h1 id="python-101"><a class="header-link" href="#python-101"></a>Python 101</h1>
+<blockquote>
+<p>Created by Fisher at 0:32 on 2017-03-11.</p>
+</blockquote>
+<h2 id="comments"><a class="header-link" href="#comments"></a>Comments</h2>
+<pre class="hljs"><code><span class="hljs-comment"># Single line comment.</span>
+
+“”””
+This would be <span class="hljs-keyword">a</span> multiline comment <span class="hljs-keyword">in</span> Python that can take several <span class="hljs-keyword">lines</span>.
+“””</code></pre><h2 id="data-types"><a class="header-link" href="#data-types"></a>Data Types</h2>
+<ul class="list">
+<li><code>list(array)</code>         <code>[1, 2, 3]</code></li>
+<li><code>unit</code>          <code>(2, -5, 6)</code></li>
+<li><code>dictionary</code>    <code>{1: &#39;food&#39;, 2: &#39;taste&#39;, 3: &#39;good&#39;}</code></li>
+<li><code>set</code>           <code>{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}</code></li>
+</ul>
+<h2 id="system-command-arguments"><a class="header-link" href="#system-command-arguments"></a>System Command Arguments</h2>
+<pre class="hljs"><code><span class="hljs-comment"># Run the test script.</span>
+python test.py Hello World
+
+<span class="hljs-comment"># ['test.py', 'Hello', 'World']</span>
+print(sys.argv)</code></pre><h2 id="functions"><a class="header-link" href="#functions"></a>Functions</h2>
+<pre class="hljs"><code><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">func</span><span class="hljs-params">(arg1, arg2=<span class="hljs-string">'default-value'</span>, arg3=<span class="hljs-number">10</span>)</span>:</span>
+    <span class="hljs-keyword">global</span> x
+    <span class="hljs-comment"># do something</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">func</span><span class="hljs-params">(*arg0)</span>:</span>
+    <span class="hljs-comment"># arg0 will be a unit</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">func</span><span class="hljs-params">(**arg0)</span>:</span>
+    <span class="hljs-comment"># arg0 will be a dictionary</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fun1</span><span class="hljs-params">(a, b, c)</span>:</span>
+    <span class="hljs-comment"># do something</span>
+arg=(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)    <span class="hljs-comment"># arg=[1, 2, 3]</span>
+fun1(*arg)</code></pre><h2 id="classes"><a class="header-link" href="#classes"></a>Classes</h2>
+<pre class="hljs"><code><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Obj</span>(<span class="hljs-title">ParentClass</span>):</span>
+    __private_params=<span class="hljs-number">1</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span> <span class="hljs-params">(<span class="hljs-keyword">self</span>)</span></span>:
+        <span class="hljs-comment"># init class</span>
+    @ staticmethod
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">func</span><span class="hljs-params">()</span></span>:
+        <span class="hljs-comment"># do something</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__del__</span><span class="hljs-params">(<span class="hljs-keyword">self</span>)</span></span>:
+        <span class="hljs-comment"># release resources</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__add__</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__sub__</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__mul__</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__div__</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__le__</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__lt__</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_len</span>:</span>
+obj = Obj()
+obj._Obj__private_params  <span class="hljs-comment"># access the private params for test</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">newfunc</span><span class="hljs-params">()</span></span>:
+    <span class="hljs-comment"># do something</span>
+obj.newfunc = newfunc    <span class="hljs-comment"># add new method to class</span></code></pre>    </article>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Class in Python</title>
+    <link type="text/css" rel="stylesheet" href="../../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/hljs-github.min.css"/>
+  </head>
+  <body>
+    <article class="markdown-body"><h1 id="class-in-python"><a class="header-link" href="#class-in-python"></a>Class in Python</h1>
+<blockquote>
+<p>Created by Fisher at 19:51 on 2017-03-11.</p>
+</blockquote>
+<pre class="hljs"><code><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span><span class="hljs-params">(ParentClass)</span>:</span>
+    <span class="hljs-comment"># Static variable.</span>
+    sStaticVariable = <span class="hljs-number">11</span>;
+    <span class="hljs-comment"># Private variable.</span>
+    __private_params=<span class="hljs-number">1</span>
+    <span class="hljs-comment"># Initialize class</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span> <span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-comment"># Normal variable.</span>
+        self.name = <span class="hljs-string">'Test Object'</span>
+        self.data = <span class="hljs-string">'Test Object'</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hello</span><span class="hljs-params">(self)</span>:</span>
+        print(self.name);
+<span class="hljs-meta">    @ staticmethod</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">func</span><span class="hljs-params">()</span>:</span>
+        <span class="hljs-comment"># do something</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__del__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-comment"># release resources</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__add__</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__sub__</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__mul__</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__div__</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__le__</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__lt__</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_len</span>:</span>
+
+print(Test.sStaticVariable)
+
+obj = Test()
+obj._Obj__private_params  <span class="hljs-comment"># access the private params for test</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">newfunc</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment"># do something</span>
+obj.newfunc = newfunc    <span class="hljs-comment"># add new method to class</span></code></pre>    </article>
+  </body>
+</html>

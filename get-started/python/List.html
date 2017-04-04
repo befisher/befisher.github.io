@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>List(Array) in Python</title>
+    <link type="text/css" rel="stylesheet" href="../../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/hljs-github.min.css"/>
+  </head>
+  <body>
+    <article class="markdown-body"><h1 id="list(array)-in-python"><a class="header-link" href="#list(array)-in-python"></a>List(Array) in Python</h1>
+<blockquote>
+<p>Created by Fisher at 19:24 on 2017-03-11.</p>
+</blockquote>
+<pre class="hljs"><code><span class="hljs-comment"># Init a list</span>
+m = [<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">9</span>,<span class="hljs-number">10</span>]
+
+<span class="hljs-comment"># Slicing the list</span>
+mList = m[<span class="hljs-number">2</span>:<span class="hljs-number">6</span>]
+mList = m[<span class="hljs-number">2</span>:]
+mList = m[:<span class="hljs-number">6</span>]
+m[<span class="hljs-number">0</span>:<span class="hljs-number">2</span>] = [<span class="hljs-number">12</span>, <span class="hljs-number">32</span>]
+
+<span class="hljs-comment"># Accessing the elements</span>
+<span class="hljs-keyword">for</span> e <span class="hljs-keyword">in</span> m:
+    <span class="hljs-keyword">print</span> e
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(m)):
+    <span class="hljs-keyword">print</span> m[i]
+
+<span class="hljs-comment"># Pop, Push, Shift, and Unshift</span>
+m.pop(<span class="hljs-number">100</span>)
+m.append()
+m = [<span class="hljs-number">100</span>] + m
+m = m[<span class="hljs-number">1</span>:]</code></pre>    </article>
+  </body>
+</html>

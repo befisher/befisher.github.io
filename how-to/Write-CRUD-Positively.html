@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Positively Write CRUD for Small Apps</title>
+    <link type="text/css" rel="stylesheet" href="../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/hljs-github.min.css"/>
+  </head>
+  <body>
+    <article class="markdown-body"><h1 id="positively-write-crud-for-small-apps"><a class="header-link" href="#positively-write-crud-for-small-apps"></a>Positively Write CRUD for Small Apps</h1>
+<p><em>I found it boring to write <a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" title="Wiki: Create Read Update Delete">CRUD(Create/Retrieve/Update/Delete)</a> operations all the time and I hope this post may be helpful for you to write CRUD positively especially for small applications.</em></p>
+<!-- > Created by Fisher at 15:04 on 2017-04-04. -->
+<h2 id="tired-to-write-crud"><a class="header-link" href="#tired-to-write-crud"></a>Tired to Write CRUD</h2>
+<p>Repeating CRUD all the time can be tedious since one&#39;s initiative and creativity is depressed and we are going to make it better.</p>
+<h2 id="creating-a-universal-abstract-helper"><a class="header-link" href="#creating-a-universal-abstract-helper"></a>Creating a Universal Abstract Helper</h2>
+<p>Obeying the Do-Not-Repeat-Yourself principle, you may come into mind of creating a universal abstract helper and share it with others. Gradually, you will find them slightly different from each other. you have been creating several different Helpers for different purpose. In the end, however, it is likely that you will not want to work on the maintainability any more.</p>
+<h2 id="customized-authorization-&-filter-for-user-input-make-it-more-complex"><a class="header-link" href="#customized-authorization-&-filter-for-user-input-make-it-more-complex"></a>Customized Authorization &amp; Filter for User Input Make it more Complex</h2>
+<p>Generally, <strong>Authorization</strong> and <strong>User Input Filter</strong> will make your small app complex and narrow purposed.</p>
+<p><strong><em>Authorization</em> and <em>User Input Filter</em> varies based on what you are doing.</strong> User Input Filter is important even for small apps. Since you expect a positive number(less than 100 let us say) provided from user or just keep your database logically acceptable, <strong>time</strong> and <em>efforts</em> and <strong>tests</strong> and <strong>patience</strong> are needed to make your server work with less exceptions or crashes.</p>
+<p><strong>As your app becoming bigger, <em>Authorization</em> will also change consequently.</strong> You may want more user types, e.g., VIP, Administrator, Super-Administrator, User Relations(Collaborators/Membership). You can either write more API for these special users or add privileges filter for each API.</p>
+<p>As a result, a lot of work is required to create a universal template.</p>
+<h2 id="positively-write-crud"><a class="header-link" href="#positively-write-crud"></a>Positively Write CRUD</h2>
+<ul class="list">
+<li><strong>Simple CRUD</strong><ol class="list">
+<li>Write a <code>SimpleCRUDHelper</code> template with configuration supported.</li>
+<li>Create instances using the <code>SimpleCRUDHelper</code> with customized options.</li>
+</ol>
+</li>
+<li><strong>Complex CRUD</strong> for some core/complex services for your app.<ol class="list">
+<li>Write a template for the basic CRUD operations.</li>
+<li>Make a copy and customize it to fit your need.</li>
+</ol>
+</li>
+</ul>
+<h2 id="references"><a class="header-link" href="#references"></a>References</h2>
+<p><em>Keeping an eye on what is going on in bigger communities will always help :)</em></p>
+<ul class="list">
+<li><a href="https://developer.github.com/" title="Github Developer">Github Developer</a></li>
+<li><a href="https://developer.github.com/v3" title="Github APIs Documentation">Github Developer Documentation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" title="Wiki: Create Read Update Delete">Wiki: Create Read Update Delete</a>.</li>
+</ul>
+    </article>
+  </body>
+</html>

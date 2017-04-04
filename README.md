@@ -14,6 +14,7 @@
 		- [Using WebStorm](get-started/tools/WebStorm.html)
 - [How To](/#) (Guidance and Tips based on topics)
 	- [How to Make Plans](how-to/Make-Plans.html)
+	- [Write CRUD Positively](how-to/Write-CRUD-Positively.html)
 - [Topics](topics/) (Personal Opinions, Ideas, Feelings)
 	- [My Hobbies](topics/My-Hobbies.html)
 	- [Risks of Being Occupied Always](topics/Risks-of-Being-Occupied-Always.html)

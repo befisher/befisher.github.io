@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>WX Python Module</title>
+    <link type="text/css" rel="stylesheet" href="../../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/hljs-github.min.css"/>
+  </head>
+  <body>
+    <article class="markdown-body"><h1 id="wx-python-module"><a class="header-link" href="#wx-python-module"></a>WX Python Module</h1>
+<blockquote>
+<p>Created by Fisher at 22:49 on 2016-10-15.</p>
+</blockquote>
+<hr>
+<hr>
+<h2 id="simple-window"><a class="header-link" href="#simple-window"></a>Simple Window</h2>
+<pre class="hljs"><code><span class="hljs-keyword">import</span> wx      
+app = wx.App()
+frame = wx.Frame(<span class="hljs-keyword">None</span>, <span class="hljs-number">-1</span>, <span class="hljs-string">'win.py'</span>)
+frame.SetDimensions(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">640</span>,<span class="hljs-number">480</span>)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">onButton</span><span class="hljs-params">(event)</span>:</span>
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"Button pressed."</span>
+
+<span class="hljs-comment"># Simple button</span>
+panel = wx.Panel(frame, wx.ID_ANY)
+button = wx.Button(panel, wx.ID_ANY, <span class="hljs-string">'Test'</span>, (<span class="hljs-number">10</span>, <span class="hljs-number">10</span>))
+
+<span class="hljs-comment"># Image button.</span>
+bmp = wx.Bitmap(<span class="hljs-string">"call-start.png"</span>, wx.BITMAP_TYPE_ANY)
+button = wx.BitmapButton(panel, id=wx.ID_ANY, bitmap=bmp, size=(bmp.GetWidth()+<span class="hljs-number">10</span>, bmp.GetHeight()+<span class="hljs-number">10</span>))
+<span class="hljs-comment"># Button event.</span>
+button.Bind(wx.EVT_BUTTON, onButton)
+
+
+<span class="hljs-comment"># Information dialog.</span>
+wx.MessageBox(<span class="hljs-string">'Pythonspot wxWidgets demo'</span>, <span class="hljs-string">'Info'</span>, wx.OK | wx.ICON_INFORMATION)
+<span class="hljs-comment"># simple dialog</span>
+wx.MessageBox(<span class="hljs-string">'A dialog'</span>, <span class="hljs-string">'Title'</span>, wx.OK)
+<span class="hljs-comment"># warning dialog</span>
+wx.MessageBox(<span class="hljs-string">'Operation could not be completed'</span>, <span class="hljs-string">'Warning'</span>, wx.OK | wx.ICON_WARNING)
+<span class="hljs-comment"># error dialog</span>
+wx.MessageBox(<span class="hljs-string">'Operation could not be completed'</span>, <span class="hljs-string">'Error'</span>, wx.OK | wx.ICON_ERROR)
+<span class="hljs-comment"># Question dialog.</span>
+dlg = wx.MessageDialog(<span class="hljs-keyword">None</span>, <span class="hljs-string">"Do you want to update?"</span>,<span class="hljs-string">'Updater'</span>,wx.YES_NO | wx.ICON_QUESTION)
+result = dlg.ShowModal()
+<span class="hljs-keyword">if</span> result == wx.ID_YES:
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"Yes pressed"</span>
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"No pressed"</span>
+<span class="hljs-comment"># File chooser dialog.</span>
+<span class="hljs-comment"># Create open file dialog</span>
+<span class="hljs-comment"># The definition of this method is: (parent, message, defaultDir, defaultFile, wildcard, style, pos)</span>
+openFileDialog = wx.FileDialog(frame, <span class="hljs-string">"Open"</span>, <span class="hljs-string">""</span>, <span class="hljs-string">""</span>,
+                                      <span class="hljs-string">"Python files (*.py)|*.py"</span>,
+                                       wx.FD_OPEN | wx.FD_FILE_MUST_EXIST)
+openFileDialog.ShowModal()
+print(openFileDialog.GetPath())
+openFileDialog.Destroy()
+<span class="hljs-comment"># Input dialog.</span>
+dlg = wx.TextEntryDialog(frame, <span class="hljs-string">'Enter some text'</span>,<span class="hljs-string">'Text Entry'</span>)
+dlg.SetValue(<span class="hljs-string">"Default"</span>)
+<span class="hljs-keyword">if</span> dlg.ShowModal() == wx.ID_OK:
+    print(<span class="hljs-string">'You entered: %s\n'</span> % dlg.GetValue())
+dlg.Destroy()
+
+
+
+<span class="hljs-comment"># Menu</span>
+<span class="hljs-comment"># Setting up the menu.</span>
+filemenu= wx.Menu()
+filemenu.Append(<span class="hljs-number">101</span>, <span class="hljs-string">"Open"</span>, <span class="hljs-string">"Open"</span>)
+filemenu.Append(<span class="hljs-number">102</span>, <span class="hljs-string">"Save"</span>, <span class="hljs-string">"Save"</span>)
+filemenu.Append(wx.ID_ABOUT, <span class="hljs-string">"About"</span>,<span class="hljs-string">"About"</span>)
+filemenu.Append(wx.ID_EXIT,<span class="hljs-string">"Exit"</span>,<span class="hljs-string">"Close"</span>)
+
+<span class="hljs-comment"># Creating the menubar.</span>
+menuBar = wx.MenuBar()
+menuBar.Append(filemenu,<span class="hljs-string">"File"</span>) <span class="hljs-comment"># Adding the "filemenu" to the MenuBar</span>
+frame.SetMenuBar(menuBar)  <span class="hljs-comment"># Adding the MenuBar to the Frame content.</span>
+
+<span class="hljs-comment"># Tabs</span>
+<span class="hljs-comment"># @Ref: https://pythonspot.com/en/wxpython-tabs/</span>
+
+
+
+frame.Show()
+<span class="hljs-comment"># To put the window in the center of the screen call:</span>
+frame.Centre()
+
+app.MainLoop()</code></pre><hr>
+<hr>
+    </article>
+  </body>
+</html>
