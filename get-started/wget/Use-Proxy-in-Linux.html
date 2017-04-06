@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Configure Proxy for Wget in Linux</title>
+    <link type="text/css" rel="stylesheet" href="../../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/hljs-github.min.css"/>
+  </head>
+  <body>
+    <article class="markdown-body"><h1 id="configure-proxy-for-wget-in-linux"><a class="header-link" href="#configure-proxy-for-wget-in-linux"></a>Configure Proxy for Wget in Linux</h1>
+<blockquote>
+<p>Created by Fisher at 19:02 on 2017-04-06.</p>
+</blockquote>
+<p>Sometimes using a proxy will be helpful and here are several ways to use proxy in <code>wget</code>.</p>
+<p>Here we suppose your proxy address/ip is <code>127.0.0.1</code> and port is <code>1080</code>.
+You can set up</p>
+<h2 id="temperately-usage"><a class="header-link" href="#temperately-usage"></a>Temperately Usage</h2>
+<pre class="hljs"><code>wget ... <span class="hljs-_">-e</span> use_proxy=yes <span class="hljs-_">-e</span> http_proxy=127.0.0.1:1080 <span class="hljs-_">-e</span> https_proxy=127.0.0.1:1080 ...</code></pre><p>Add alias in your ~/.bashrc file</p>
+<pre class="hljs"><code>alias <span class="hljs-attr">wget-proxy="wget</span> -e <span class="hljs-attr">use_proxy=yes</span> -e <span class="hljs-attr">http_proxy=127.0.0.1:1080</span> -e <span class="hljs-attr">https_proxy=127.0.0.1:1080";</span></code></pre><h2 id="edit-either-`/etc/wgetrc`-or-`~/.wgetrc`."><a class="header-link" href="#edit-either-`/etc/wgetrc`-or-`~/.wgetrc`."></a>Edit either <code>/etc/wgetrc</code> or <code>~/.wgetrc</code>.</h2>
+<pre class="hljs"><code><span class="hljs-comment"># You can set the default proxies for Wget to use for http, https, and ftp.</span>
+<span class="hljs-comment"># They will override the value in the environment.</span>
+http_proxy = http://127.0.0.1:1080/
+https_proxy = http://127.0.0.1:1080/
+ftp_proxy = http://127.0.0.1:1080/
+
+<span class="hljs-comment"># If you do not want to use proxy at all, set this to off.</span>
+use_proxy = on</code></pre><h2 id="uses-environment-variables"><a class="header-link" href="#uses-environment-variables"></a>Uses Environment Variables</h2>
+<pre class="hljs"><code><span class="hljs-built_in">export</span> http_proxy=http://ip-of-proxy-server:port/
+<span class="hljs-built_in">export</span> https_proxy=<span class="hljs-variable">$http_proxy</span>
+<span class="hljs-built_in">export</span> ftp_proxy=<span class="hljs-variable">$http_proxy</span>
+<span class="hljs-built_in">export</span> dns_proxy=<span class="hljs-variable">$http_proxy</span>
+<span class="hljs-built_in">export</span> rsync_proxy=<span class="hljs-variable">$http_proxy</span>
+<span class="hljs-built_in">export</span> no_proxy=<span class="hljs-string">"localhost,127.0.0.1,localaddress,.localdomain.com"</span></code></pre><h2 id="references"><a class="header-link" href="#references"></a>References</h2>
+<ul class="list">
+<li>Stackoverflow: <a href="http://stackoverflow.com/questions/11211705/setting-proxy-in-wget">Setting Up Proxy for Wget</a>.</li>
+</ul>
+    </article>
+  </body>
+</html>
