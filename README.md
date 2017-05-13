@@ -18,6 +18,7 @@
 	- [Write CRUD Positively](how-to/Write-CRUD-Positively.html)
 <!-- - [Programming](programming/) (Programming Tips) -->
 - [topics](topics/) - Technological topics, terminologies
+	- [Proxy](topics/Proxy/)
 - [My](my/)
 	- [My Learning Tree](my/Learning-Tree.html)
 	- [My Books List](my/Books-List.html)
