@@ -1,9 +1,9 @@
-# Fisher's Personal Blog
+# Fisher's Blog
 
-<!-- > Created by Fisher at 02:53 on 2017-01-11. -->
+<!-- > Created by Fisher at 2:53 AM on 1/11/17. -->
 
 
-## Blogs Structure
+## Blog Structure
 
 - [Frontend](frontend/)
 	- [CRUD in Front-end](frontend/CRUD-in-Frontend/)
