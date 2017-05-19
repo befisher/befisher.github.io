@@ -1,8 +1,6 @@
-# Get Started with something new, funny.
+# Get Started With Programming Languages, Commands, Platform.
 
-*Notes for references (if possible :)*
-
-> 6th March, 2017, 21:43.
+> Created by Fisher at 9:43 PM on 3/6/17.
 
 - [Docker](/#)
 	- [Docker 101](docker/)
