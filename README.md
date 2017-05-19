@@ -7,11 +7,12 @@
 
 - [Frontend](frontend/)
 	- [CRUD in Front-end](frontend/CRUD-in-Frontend/)
-- [Get Started](get-started/) - References for newbies
+- [Get Started](get-started/) - Get Started With Programming Languages, Commands, Platform.
 	- [Docker](/#)
 		- [Docker 101](get-started/docker/)
 	- [Linux](/#)
 		- [Setup Server](get-started/linux/Setup-Server.html)
+		- [SSH](get-started/linux/SSH.html)
 	- [Tools](/#)
 		- [Using WebStorm](get-started/tools/WebStorm.html)
 - [How To](/#) - Guidance and tips based on topics
