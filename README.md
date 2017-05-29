@@ -10,8 +10,11 @@
 - [Get Started](get-started/) - Get Started With Programming Languages, Commands, Platform.
 	- [Docker](/#)
 		- [Docker 101](get-started/docker/)
+	- Git
+		- [Git Basic](get-started/Git/Basic.html)
+		- [Using Git](get-started/Git/Using-Git.html)
 	- [Linux](/#)
-		- [Setup Server](get-started/linux/Setup-Server.html)
+		- [Setup a Linux Server](get-started/linux/Setup-Server.html)
 		- [SSH](get-started/linux/SSH.html)
 	- [Tools](/#)
 		- [Using WebStorm](get-started/tools/WebStorm.html)

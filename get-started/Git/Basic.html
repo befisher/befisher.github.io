@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Git Basic</title>
+    <link type="text/css" rel="stylesheet" href="../../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/hljs-github.min.css"/>
+  </head>
+  <body>
+    <article class="markdown-body"><h1 id="git-basic"><a class="header-link" href="#git-basic"></a>Git Basic</h1>
+<blockquote>
+<p>Created by Fisher at 23:08 on 2017-04-13.</p>
+</blockquote>
+<h2 id="[undo-last-commit](http://stackoverflow.com/questions/927358/how-to-undo-last-commits-in-git)"><a class="header-link" href="#[undo-last-commit](http://stackoverflow.com/questions/927358/how-to-undo-last-commits-in-git)"></a><a href="http://stackoverflow.com/questions/927358/how-to-undo-last-commits-in-git">Undo Last Commit</a></h2>
+<pre class="hljs"><code>git reset HEAD~</code></pre><h2 id="[git-undo-`git-reset-head~`](http://stackoverflow.com/questions/2510276/undoing-git-reset)"><a class="header-link" href="#[git-undo-`git-reset-head~`](http://stackoverflow.com/questions/2510276/undoing-git-reset)"></a><a href="http://stackoverflow.com/questions/2510276/undoing-git-reset">Git Undo <code>git reset HEAD~</code></a></h2>
+<pre class="hljs"><code>git reset <span class="hljs-string">'HEAD@{1}'</span></code></pre><h2 id="[undo-all-working-dir-changes-including-new-files](http://stackoverflow.com/questions/1090309/git-undo-all-working-dir-changes-including-new-files)"><a class="header-link" href="#[undo-all-working-dir-changes-including-new-files](http://stackoverflow.com/questions/1090309/git-undo-all-working-dir-changes-including-new-files)"></a><a href="http://stackoverflow.com/questions/1090309/git-undo-all-working-dir-changes-including-new-files">Undo All Working Dir Changes Including New Files</a></h2>
+<pre class="hljs"><code>git reset --hard <span class="hljs-comment"># removes staged and working directory changes</span>
+git clean <span class="hljs-_">-f</span> <span class="hljs-_">-d</span> <span class="hljs-comment"># remove untracked</span>
+
+<span class="hljs-comment">## !! be very careful with these !!</span>
+<span class="hljs-comment">## you may end up deleting what you don't want to</span>
+<span class="hljs-comment">## read comments and manual.</span>
+git clean <span class="hljs-_">-f</span> <span class="hljs-_">-d</span> <span class="hljs-comment"># remove untracked</span>
+git clean <span class="hljs-_">-f</span> -x <span class="hljs-_">-d</span> <span class="hljs-comment"># CAUTION: as above but removes ignored files like config.</span>
+git clean -fxd :/ <span class="hljs-comment"># CAUTION: as above, but cleans untracked and ignored files through the entire repo (without :/, the operation affects only the current directory)</span></code></pre><h2 id="branch"><a class="header-link" href="#branch"></a>Branch</h2>
+<h3 id="create-a-new-branch-and-checkout-to-it."><a class="header-link" href="#create-a-new-branch-and-checkout-to-it."></a>Create a new branch and checkout to it.</h3>
+<pre class="hljs"><code>git checkout -b &lt;branch-name&gt;</code></pre><h2 id="tag"><a class="header-link" href="#tag"></a>Tag</h2>
+<pre class="hljs"><code><span class="hljs-comment"># Show local tags.</span>
+git tag
+
+<span class="hljs-comment"># Create a tag.</span>
+git tag <span class="hljs-_">-a</span> v0.1 -m <span class="hljs-string">'version v0.1'</span>
+
+<span class="hljs-comment"># Tag specific commit.</span>
+git tag <span class="hljs-_">-a</span> v1.2 9fceb02
+
+<span class="hljs-comment"># Push tag to remote.</span>
+git push &lt;remote-name&gt; &lt;tag-name&gt;
+git push origin v0.0.1</code></pre>    </article>
+  </body>
+</html>
