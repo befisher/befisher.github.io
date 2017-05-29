@@ -24,7 +24,13 @@ git clean <span class="hljs-_">-f</span> <span class="hljs-_">-d</span> <span cl
 <span class="hljs-comment">## read comments and manual.</span>
 git clean <span class="hljs-_">-f</span> <span class="hljs-_">-d</span> <span class="hljs-comment"># remove untracked</span>
 git clean <span class="hljs-_">-f</span> -x <span class="hljs-_">-d</span> <span class="hljs-comment"># CAUTION: as above but removes ignored files like config.</span>
-git clean -fxd :/ <span class="hljs-comment"># CAUTION: as above, but cleans untracked and ignored files through the entire repo (without :/, the operation affects only the current directory)</span></code></pre><h2 id="branch"><a class="header-link" href="#branch"></a>Branch</h2>
+git clean -fxd :/ <span class="hljs-comment"># CAUTION: as above, but cleans untracked and ignored files through the entire repo (without :/, the operation affects only the current directory)</span></code></pre><h2 id="assume-local-files-unchanged"><a class="header-link" href="#assume-local-files-unchanged"></a>Assume Local Files Unchanged</h2>
+<p>Assume changed files unchanged.</p>
+<pre class="hljs"><code>git update-index --skip-worktree [&lt;file&gt;...]</code></pre><ul class="list">
+<li>StackOverflow: <a href="https://stackoverflow.com/questions/1753070/how-to-ignore-files-only-locally-in-git">Ignore files only locally in git</a>.</li>
+<li>StackOverflow: <a href="https://stackoverflow.com/questions/13630849/git-difference-between-assume-unchanged-and-skip-worktree/13631525#13631525">Difference Between <code>assume-unchanged</code> and <code>skip-worktree</code></a>.</li>
+</ul>
+<h2 id="branch"><a class="header-link" href="#branch"></a>Branch</h2>
 <h3 id="create-a-new-branch-and-checkout-to-it."><a class="header-link" href="#create-a-new-branch-and-checkout-to-it."></a>Create a new branch and checkout to it.</h3>
 <pre class="hljs"><code>git checkout -b &lt;branch-name&gt;</code></pre><h2 id="tag"><a class="header-link" href="#tag"></a>Tag</h2>
 <pre class="hljs"><code><span class="hljs-comment"># Show local tags.</span>

@@ -30,6 +30,17 @@ git clean -f -x -d # CAUTION: as above but removes ignored files like config.
 git clean -fxd :/ # CAUTION: as above, but cleans untracked and ignored files through the entire repo (without :/, the operation affects only the current directory)
 ```
 
+## Assume Local Files Unchanged
+
+Assume changed files unchanged.
+
+```bash
+git update-index --skip-worktree [<file>...]
+```
+
+- StackOverflow: [Ignore files only locally in git](https://stackoverflow.com/questions/1753070/how-to-ignore-files-only-locally-in-git).
+- StackOverflow: [Difference Between `assume-unchanged` and `skip-worktree`](https://stackoverflow.com/questions/13630849/git-difference-between-assume-unchanged-and-skip-worktree/13631525#13631525).
+
 ## Branch
 
 ### Create a new branch and checkout to it.
